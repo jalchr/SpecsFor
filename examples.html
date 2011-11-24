@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>SpecsFor - Simple, painless Behavior-Driven Development for .NET</title>
+	<link rel="Stylesheet" href="styles.css" />
+</head>
+<body>
+	<a href="https://github.com/MattHoneycutt/SpecsFor">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+			alt="Fork me on GitHub" />
+	</a>
+	<div id="container">
+		<!-- Header -->
+		<div class="download">
+			<a href="https://github.com/MattHoneycutt/SpecsFor/zipball/master">
+				<img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+			<a href="https://github.com/MattHoneycutt/SpecsFor/tarball/master">
+				<img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+		</div>
+		<h1>
+			<a href="https://github.com/MattHoneycutt/SpecsFor">SpecsFor</a> <span class="small">
+				- Another BDD Framework for .NET </span></h1>
+		<h2>Examples</h2>
+		<p>
+			SpecsFor can be easily tailored to how you want to write tests.  You can keep it old-school
+			and skip the BDD-style syntax:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=OrderProcessorSpecs.OldSchool.cs"></script>
+		<p>
+			If you are a more experienced tester who prefers the BDD-way and one-assert-per-test, you can separate your Given, When, and 
+			Then steps.  SpecsFor will ensure that your Given and When are only run once no matter how 
+			many Then's you have.
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=OrderProcessingSpecs.BDD.cs"></script>
+		<p>
+			You can easily reuse context across test fixtures in a variety of ways.  There's the 
+			typical inheritance-based approach:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=OrderProcessingSpecs.BDD.Inheritance.cs"></script>
+		<p>
+			If you prefer a more composable approach, you can separate your context out and apply
+			one or more Givens in a fixture:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=ValidatingOrderProcessorSpecs.Compositional.cs"></script>
+		<p>
+			If your When and Then steps are constant, but you need to evaluate them across a variety
+			of Given contexts, you can take advantage of the attribute-based approach, and your
+			fixture will be executed multiple times, once for each attribute:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=ValidatingOrderProcessorSpecs.Attributes.cs"></script>
+		<div class="footer">
+			get the source code on GitHub : <a href="https://github.com/MattHoneycutt/SpecsFor">
+				MattHoneycutt/SpecsFor</a>
+		</div>
+	</div>
+</body>
+</html>

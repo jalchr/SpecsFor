@@ -11,6 +11,7 @@
 			alt="Fork me on GitHub" />
 	</a>
 	<div id="container">
+		<!-- Header -->
 		<div class="download">
 			<a href="https://github.com/MattHoneycutt/SpecsFor/zipball/master">
 				<img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
@@ -19,7 +20,7 @@
 		</div>
 		<h1>
 			<a href="https://github.com/MattHoneycutt/SpecsFor">SpecsFor</a> <span class="small">
-				by <a href="https://github.com/MattHoneycutt">Matt Honeycutt</a></span></h1>
+				- Another BDD Framework for .NET </span></h1>
 		<div class="description">
 			SpecsFor is a light-weight Behavior-Driven Development framework that focuses on
 			ease of use for <u>developers</u> by minimizing testing friction.
@@ -35,7 +36,7 @@
 			and you will immediately have access to a the SpecsFor BDD-style testing framework as 
 			well as other essential testing tools, such as Moq, ExpectedObjects, and Should. 
 		</p>
-		<h2>Install</h2>
+		<h2>Quickstart</h2>
 		<p>
 			The easiest way to get started with SpecsFor is to install it with NuGet.</p>
 		<div class="commandWrapper">
@@ -45,46 +46,31 @@
 			</div>
 		</div>
 		<p>
-			Binary packages are also available on the Github project page. 
+			Binary packages are also available on the <a href="https://github.com/MattHoneycutt/SpecsFor">Github project page</a>. 
 		</p>
+		<h2>SpecsFor Includes</h2>
+		<ul>
+			<li>NUnit</li>
+			<li>Moq</li>
+			<li>StructureMap.AutoMocker</li>
+			<li>Should</li>
+			<li>ExpectedObjects</li> 
+			<li>Additional Test Helpers</li> 
+			<li>Resharper and Visual Studio Live Templates</li> 
+		</ul>
 		<h2>Examples</h2>
 		<p>
-			SpecsFor can be easily tailored to how you want to write tests.  You can keep it old-school
-			and skip the BDD-style syntax:
-		</p>
-		<script src="https://gist.github.com/1375611.js?file=OrderProcessorSpecs.OldSchool.cs"></script>
-		<p>
-			If you are a more experienced tester who prefers the BDD-way and one-assert-per-test, you can separate your Given, When, and 
-			Then steps.  SpecsFor will ensure that your Given and When are only run once no matter how 
-			many Then's you have.
+			With SpecsFor, you can quickly and easily craft BDD-style tests:
 		</p>
 		<script src="https://gist.github.com/1375611.js?file=OrderProcessingSpecs.BDD.cs"></script>
 		<p>
-			You can easily reuse context across test fixtures in a variety of ways.  There's the 
-			typical inheritance-based approach:
+			SpecsFor is flexible enough to accomodate a wide range of testing styles.  Check out the
+			<a href="examples.html">example gallery</a> to see other ways that you can craft tests using SpecsFor.
 		</p>
-		<script src="https://gist.github.com/1375611.js?file=OrderProcessingSpecs.BDD.Inheritance.cs"></script>
-		<p>
-			If you prefer a more composable approach, you can separate your context out and apply
-			one or more Givens in a fixture:
-		</p>
-		<script src="https://gist.github.com/1375611.js?file=ValidatingOrderProcessorSpecs.Compositional.cs"></script>
-		<p>
-			If your When and Then steps are constant, but you need to evaluate them across a variety
-			of Given contexts, you can take advantage of the attribute-based approach, and your
-			fixture will be executed multiple times, once for each attribute:
-		</p>
-		<script src="https://gist.github.com/1375611.js?file=ValidatingOrderProcessorSpecs.Attributes.cs"></script>
 		<h2>Additional Test Helpers</h2>
 		<p>
 			Aside from the core SpecsFor base class, there are several other helpers that will simplify
-			your tests, clean up your code, and boost your productivity.  Have you ever needed to verify
-			that a complex object was passed to a mock object?  Or verify multiple properties on a returned object?
-			If so, you probably ended up with code that looked something like:
-		</p>
-		<script src="https://gist.github.com/1375611.js?file=InvoiceProcessorSpecs.WithoutHelpers.cs"></script>
-		<p>
-			With SpecsFor's Looks.Like and ShouldLookLike methods, you can simplify the above code to:
+			your tests, clean up your code, and boost your productivity:
 		</p>
 		<script src="https://gist.github.com/1375611.js?file=InvoiceProcessorSpecs.WithHelpers.cs"></script>
 		<p>
@@ -102,14 +88,6 @@
 			</div>
 		</div>
 		
-		<h2>SpecsFor Includes</h2>
-		<ul>
-			<li>NUnit</li>
-			<li>Moq</li>
-			<li>StructureMap & StructureMap.AutoMocker</li>
-			<li>Should</li>
-			<li>ExpectedObjects</li> 
-		</ul>
 		<h2>Authors</h2>
 		<p>
 			Matt Honeycutt (http://trycatchfail.com)
@@ -118,8 +96,9 @@
 		<h2>
 			Contact</h2>
 		<p>
-			Matt Honeycutt (@matthoneycutt)
-			<br />
+			Github: <a href="https://github.com/MattHoneycutt">Matt Honeycutt</a> <br /> 
+			Twitter: <a href="http://twitter.com/matthoneycutt">@matthoneycutt</a>
+			Homepage: <a href="http://trycatchfail.com">Try-Catch-FAIL</a>
 		</p>
 		<h2>
 			Contributing</h2>
