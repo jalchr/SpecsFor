@@ -1,143 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-
-  <title>SpecsFor - Simple, painless Behavior-Driven Development for .NET</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #D1D3DB;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 750px;
-	  background-color: #B3B4BE;
-	  padding: 1em 3em;
-	  border: 1px solid #FFF;
-	  border-radius: 3em;
-    }
-    h1 { font-size: 3.8em; color: #737477; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #737477; }
-    h3 { text-align: center; color: #737477; }
-    a { color: #737477; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	
-	.commandWrapper {
-		background: #D6D6D6;
-		border: 0px solid white;
-		padding: 4px;
-		margin: 36px 0;
-		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#d6d6d6', endColorstr='#505050');
-		background: -webkit-gradient(linear, 0 0, 0 100%, from(#D6D6D6), to(#505050));
-		background: -moz-linear-gradient(top, #D6D6D6, #505050);
-		border-radius: 8px;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-	}
-
-	.commandPrompt {
-		background: black;
-		border: 1px solid #C4C4C4;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 1.0);
-		filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#5e5e5e', endColorstr='#000');
-		background: -webkit-gradient(linear, 0 0, 0 100%, from(#5E5E5E), to(black));
-		background: -moz-linear-gradient(top, #5E5E5E, black);
-		box-shadow: inset 6px 6px 14px rgba(0, 0, 0, 0.6), 1px 1px 4px rgba(102, 102, 102, 1.0);
-		-webkit-box-shadow: inset 6px 6px 14px rgba(0, 0, 0, 0.6), 1px 1px 4px rgba(102, 102, 102, 1.0);
-		-moz-box-shadow: inset 6px 6px 14px rgba(0, 0, 0, 0.6), 1px 1px 4px rgba(102, 102, 102, 1.0);
-		border-radius: 6px;
-		-webkit-border-radius: 6px;
-		-moz-border-radius: 6px;
-	}
-
-	.command {
-		color: #72EB18;
-		color: #E2E2E2;
-		font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-		font-size: 24px;
-		line-height: 24px;
-		margin: 24px 8px;
-	}	
-	</style>
+	<meta charset='utf-8'>
+	<title>SpecsFor - Simple, painless Behavior-Driven Development for .NET</title>
+	<link rel="Stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <a href="https://github.com/MattHoneycutt/SpecsFor"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/MattHoneycutt/SpecsFor/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/MattHoneycutt/SpecsFor/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/MattHoneycutt/SpecsFor">SpecsFor</a>
-      <span class="small">by <a href="https://github.com/MattHoneycutt">Matt Honeycutt</a></span></h1>
-
-    <div class="description">
-      SpecsFor is a light-weight Behavior-Driven Development framework that focuses on ease of use for <u>developers</u> by minimizing testing friction.
-    </div>
-
-    
-      <p>It is an opinionated (but flexible) testing framework built on top of NUnit.  While NUnit and similar frameworks provide the barebone essentials for creating tests, they don't address many of the other arduous tasks involved in Test Driven Development.  That's where SpecsFor comes in. </p>
-    
-
-    
-      <h2>Dependencies</h2>
-      <ul>
-		<li>NUnit</li>
-		<li>Moq</li>
-	  </ul>
-    
-
-    
-      <h2>Install</h2>
-      <p>The easiest way to get started with SpecsFor is to install it with NuGet.</p>
-
+	<a href="https://github.com/MattHoneycutt/SpecsFor">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+			alt="Fork me on GitHub" />
+	</a>
+	<div id="container">
+		<div class="download">
+			<a href="https://github.com/MattHoneycutt/SpecsFor/zipball/master">
+				<img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
+			<a href="https://github.com/MattHoneycutt/SpecsFor/tarball/master">
+				<img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+		</div>
+		<h1>
+			<a href="https://github.com/MattHoneycutt/SpecsFor">SpecsFor</a> <span class="small">
+				by <a href="https://github.com/MattHoneycutt">Matt Honeycutt</a></span></h1>
+		<div class="description">
+			SpecsFor is a light-weight Behavior-Driven Development framework that focuses on
+			ease of use for <u>developers</u> by minimizing testing friction.
+		</div>
+		<p>
+			It is an opinionated (but flexible) testing framework built on top of NUnit. While
+			NUnit and similar frameworks provide the barebone essentials for creating tests,
+			they don't address many of the other arduous tasks involved in Test Driven Development.
+			That's where SpecsFor comes in.  
+		</p>
+		<p>
+			Simply add the SpecsFor NuGet package to your project,
+			and you will immediately have access to a the SpecsFor BDD-style testing framework as 
+			well as other essential testing tools, such as Moq, ExpectedObjects, and Should. 
+		</p>
+		<h2>Install</h2>
+		<p>
+			The easiest way to get started with SpecsFor is to install it with NuGet.</p>
 		<div class="commandWrapper">
 			<div class="commandPrompt">
-				<p class="command">PM&gt; Install-Package SpecsFor</p>
+				<p class="command">
+					PM&gt; Install-Package SpecsFor</p>
 			</div>
-		</div>    
+		</div>
+		<p>
+			Binary packages are also available on the Github project page. 
+		</p>
+		<h2>Examples</h2>
+		<p>
+			SpecsFor can be easily tailored to how you want to write tests.  You can keep it old-school
+			and skip the BDD-style syntax:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=OrderProcessorSpecs.OldSchool.cs"></script>
+		<p>
+			If you are a more experienced tester who prefers the BDD-way and one-assert-per-test, you can separate your Given, When, and 
+			Then steps.  SpecsFor will ensure that your Given and When are only run once no matter how 
+			many Then's you have.
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=OrderProcessingSpecs.BDD.cs"></script>
+		<p>
+			You can easily reuse context across test fixtures in a variety of ways.  There's the 
+			typical inheritance-based approach:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=OrderProcessingSpecs.BDD.Inheritance.cs"></script>
+		<p>
+			If you prefer a more composable approach, you can separate your context out and apply
+			one or more Givens in a fixture:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=ValidatingOrderProcessorSpecs.Compositional.cs"></script>
+		<p>
+			If your When and Then steps are constant, but you need to evaluate them across a variety
+			of Given contexts, you can take advantage of the attribute-based approach, and your
+			fixture will be executed multiple times, once for each attribute:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=ValidatingOrderProcessorSpecs.Attributes.cs"></script>
+		<h2>Additional Test Helpers</h2>
+		<p>
+			Aside from the core SpecsFor base class, there are several other helpers that will simplify
+			your tests, clean up your code, and boost your productivity.  Have you ever needed to verify
+			that a complex object was passed to a mock object?  Or verify multiple properties on a returned object?
+			If so, you probably ended up with code that looked something like:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=InvoiceProcessorSpecs.WithoutHelpers.cs"></script>
+		<p>
+			With SpecsFor's Looks.Like and ShouldLookLike methods, you can simplify the above code to:
+		</p>
+		<script src="https://gist.github.com/1375611.js?file=InvoiceProcessorSpecs.WithHelpers.cs"></script>
+		<p>
+			SpecsFor also includes both Resharper and Visual Studio templates that are designed to
+			save you keystrokes while crafting your tests.  The included templates are meant to serve as 
+			a starting point and are easily customizable.  
+		</p>
 
-    <p>Binary packages are also available on Github.  You can download this project in either
-      <a href="https://github.com/MattHoneycutt/SpecsFor/zipball/master">zip</a> or
-      <a href="https://github.com/MattHoneycutt/SpecsFor/tarball/master">tar</a> formats.
-    </p>
-
-    
-      <h2>Authors</h2>
-      <p>Matt Honeycutt (http://trycatchfail.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Matt Honeycutt (@matthoneycutt)<br/>      </p>
-    
-
-    <h2>Contributing</h2>
-    <p>Have an idea that will make testing more enjoyable?  I welcome contributions to SpecsFor. You can clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/MattHoneycutt/SpecsFor</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/MattHoneycutt/SpecsFor">MattHoneycutt/SpecsFor</a>
-    </div>
-
-  </div>
-
+		<div class="screenshots">
+			<div>
+				<img src="images/Given.png" alt="Given..." />
+			</div>
+			<div>
+				<img src="images/When.png" alt="When..." />
+			</div>
+		</div>
+		
+		<h2>SpecsFor Includes</h2>
+		<ul>
+			<li>NUnit</li>
+			<li>Moq</li>
+			<li>StructureMap & StructureMap.AutoMocker</li>
+			<li>Should</li>
+			<li>ExpectedObjects</li> 
+		</ul>
+		<h2>Authors</h2>
+		<p>
+			Matt Honeycutt (http://trycatchfail.com)
+			<br />
+		</p>
+		<h2>
+			Contact</h2>
+		<p>
+			Matt Honeycutt (@matthoneycutt)
+			<br />
+		</p>
+		<h2>
+			Contributing</h2>
+		<p>
+			Have an idea that will make testing more enjoyable? I welcome contributions to SpecsFor.
+			You can clone the project with <a href="http://git-scm.com">Git</a> by running:
+			<pre>$ git clone git://github.com/MattHoneycutt/SpecsFor</pre>
+		</p>
+		<div class="footer">
+			get the source code on GitHub : <a href="https://github.com/MattHoneycutt/SpecsFor">
+				MattHoneycutt/SpecsFor</a>
+		</div>
+	</div>
 </body>
 </html>
